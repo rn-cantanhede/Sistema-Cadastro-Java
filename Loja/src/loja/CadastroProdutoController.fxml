@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="595.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loja.CadastroProdutoController">
+    <children>
+        <Label fx:id="label" layoutX="39.0" layoutY="31.0" minHeight="16" minWidth="41.0" prefHeight="53.0" prefWidth="80.0" text="Código">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Label fx:id="label1" layoutX="39.0" layoutY="76.0" minHeight="16" minWidth="41.0" prefHeight="53.0" prefWidth="65.0" text="Nome">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="label11" layoutX="39.0" layoutY="129.0" minHeight="16" minWidth="41.0" prefHeight="53.0" prefWidth="127.0" text="Quantidade">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCodigo" layoutX="178.0" layoutY="38.0" prefHeight="40.0" prefWidth="228.0" />
+      <TextField fx:id="txtNome" layoutX="178.0" layoutY="89.0" prefHeight="40.0" prefWidth="228.0" />
+      <TextField fx:id="txtQuanti" layoutX="178.0" layoutY="139.0" prefHeight="40.0" prefWidth="228.0" />
+      <Button layoutX="173.0" layoutY="200.0" mnemonicParsing="false" onAction="#incluirClique" prefHeight="40.0" prefWidth="127.0" text="Inserir" />
+      <TableView fx:id="tblProduto" layoutX="33.0" layoutY="270.0" prefHeight="307.0" prefWidth="407.0">
+        <columns>
+          <TableColumn fx:id="cltCodigo" prefWidth="126.0" text="Código" />
+          <TableColumn fx:id="cltNome" prefWidth="196.0" text="Nome" />
+            <TableColumn fx:id="cltQuanti" minWidth="0.0" prefWidth="84.0" text="Quantidade" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
